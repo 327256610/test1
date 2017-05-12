@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F2A2DAE1E6595CC0072D167 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F2A2DAD1E6595CC0072D167 /* MapKit.framework */; };
 		9F602D571E64371F00695F6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F602D561E64371F00695F6F /* main.m */; };
 		9F602D5A1E64371F00695F6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F602D591E64371F00695F6F /* AppDelegate.m */; };
 		9F602D5D1E64371F00695F6F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F602D5C1E64371F00695F6F /* ViewController.m */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F2A2DAD1E6595CC0072D167 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9F602D521E64371F00695F6F /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F602D561E64371F00695F6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9F602D581E64371F00695F6F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F2A2DAE1E6595CC0072D167 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F2A2DAC1E6595CC0072D167 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F2A2DAD1E6595CC0072D167 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9F602D491E64371F00695F6F = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +96,7 @@
 				9F602D6E1E64371F00695F6F /* testTests */,
 				9F602D791E64371F00695F6F /* testUITests */,
 				9F602D531E64371F00695F6F /* Products */,
+				9F2A2DAC1E6595CC0072D167 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -209,6 +221,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 34A79RA22E;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					9F602D6A1E64371F00695F6F = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -516,6 +533,7 @@
 				9F602D811E64371F00695F6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F602D821E64371F00695F6F /* Build configuration list for PBXNativeTarget "testTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +542,7 @@
 				9F602D841E64371F00695F6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F602D851E64371F00695F6F /* Build configuration list for PBXNativeTarget "testUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +551,7 @@
 				9F602D871E64371F00695F6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
